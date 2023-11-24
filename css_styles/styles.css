@@ -1,0 +1,665 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: 0;
+}
+
+@font-face {
+  font-family: "ConfigRounded";
+  src: url("../fonts/ConfigRoundedBlackItalic.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ConfigRounded";
+  src: url("../fonts/ConfigRoundedBoldItalic.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "ConfigRounded", sans-serif;
+  src: url("../fonts/ConfigRoundedLightItalic.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Kenyan-coffe", sans-serif;
+  src: url("../fonts/kenyan_coffee_rg.otf") format("truetype");
+  font-style: normal;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-content: center;
+  width: 100%;
+  height: 150px;
+}
+nav {
+  margin-top: 50px;
+}
+body {
+  font-family: "ConfigRounded", italic;
+  font-size: 20px;
+  background-color: #090807;
+}
+
+
+
+ul li {
+  display: inline-block;
+  padding: 0px 20px;
+}   
+
+a {
+  color: #e10814;
+  text-decoration: none;
+}
+
+a:hover {
+  color: rgb(199, 164, 9);
+
+}
+          
+h1 {
+  
+  color: white;
+  font-size: 11rem;
+  font-family: "kenyan-cofee", normal;
+}
+
+h2 {
+  color: #f6d707;
+  font-size: 5rem;
+  margin-top: 0;
+  font-family: "kenyan-cofee", normal;
+}
+
+h3{
+  font-size: 14px;
+  margin-left: 10%;
+  color: aliceblue;
+}
+
+h4 {
+    font-family: "configRounded" , normal;
+    color: rgb(7, 176, 238);
+}
+
+p {
+    color: rgb(124, 125, 126);
+    font-family:Arial, Helvetica, sans-serif;
+    font-style: normal;
+    
+    
+}
+img {
+  width: 150px;
+  height: 90;
+  display: flex;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.main-container {
+  background-image: url(../images/Banner_web-01.png);
+  background-size: cover;
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%; 
+  grid-template-areas:
+    "vacio nombre-artistico"
+    "vacio2 reproductor"; 
+}
+
+.nombre-artistico {
+  grid-area: nombre-artistico ;
+  text-align: center;
+}
+.reproductor {
+  grid-area: reproductor;
+}
+audio {
+  margin-left: 10%;
+  margin-top: 2%;
+  width: 80%;
+  height: auto;
+}
+.carrousel-1 {
+  background-color: #0f0410;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "tipo-promo label-ep";
+}
+
+.tipo-promo {
+  grid-area: tipo-promo;
+  /*background-color: aqua;*/
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+.label-ep {
+  grid-area: label-ep;
+  /*background-color: deeppink;*/
+  display: flex;
+  justify-content: center; /* Centra horizontalmente */
+  align-items: center; /* Centra verticalmente */
+}
+.ep-label {
+  width: 450px;
+  height: 450px;
+}
+.promo-tipo {
+  width: 450px;
+  height: 450px;
+}
+.video-container {
+  width: 100%;
+  height: 450px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%;
+  grid-template-areas: "vidcontainer1 vidcontainer2";
+  overflow: hidden;
+}
+
+.video-1 {
+  grid-area: vidcontainer1;
+  margin-top: 5%;
+  margin-left: 5%;
+  border: 0;
+}
+
+.video-2 {
+  grid-area: vidcontainer2;
+  margin-top: 5%;
+  margin-left: 5%;
+  border: 0;
+}
+
+.footer {
+  background-color: rgb(23, 29, 18);
+  width: 100%;
+  height: 280px;
+}
+
+/* Pagina bio*/
+
+.bio-container {
+  background-image: url(../images/Backgroun_biography.png);
+  background-size: cover;
+  width: 100%;
+  height: 700px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 100%; 
+  grid-template-areas:
+    "texto space2";
+
+}
+
+.texto {
+  grid-area: texto;
+  margin-left: 10%;
+
+}
+.flayers {
+  width: 100%;
+  height: 550px;
+  display: grid;
+  grid-template-columns: 25% 25% 25% 25%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+   " flayer_1 flayer_2 flayer_3 flayer_4"
+  ;
+}
+.eventos {
+  font-size: 3rem;
+  text-align: center;
+
+}
+.flayer1 {
+  grid-area: flayer_1;
+  width: 100%;
+  height: auto;
+}
+.flayer2 {
+  grid-area: flayer_2;
+  width: 100%;
+  height: auto;
+}
+.flayer3 {
+  grid-area: flayer_3;
+  width: 100%;
+  height: auto;
+}
+.flayer4 {
+  grid-area: flayer_4;
+  width: 100%;
+  height: auto;
+}
+.flayer-1 {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+.flayer-2 {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+.flayer-3 {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+.flayer-4 {
+  margin-left: 5%;
+  width: 90%;
+  height: auto;
+}
+
+/* pagina playlist*/
+
+.playlist-container {
+  width: 100%;
+  height: 400px;
+  background-color:#E73E25;
+  display: grid;
+  grid-template-columns: 35% 30% 35%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+   " disco-1 reproductor disco-2";
+
+}
+
+.reproductor-container {
+ 
+  grid-area: reproductor;
+  width: 100%;
+  height: 400px;
+  background-color:#182126;
+}
+
+.disk-left {
+  text-align: center;
+  grid-area: disco-1;
+  width:100%;
+  height: 400px;
+  background-color:#E73E25;
+}
+.disk-right {
+  grid-area: disco-2;
+  width: 100%;
+  height: 400px;
+ 
+}
+
+#disk-izq {
+  width: 100%;
+  height: auto;
+}
+#disk-der {
+  width: 100%;
+  height: auto;
+}
+
+/* Pagina contacto*/
+
+.contact-form {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(98, 6, 126);
+  display: grid;
+  grid-template-columns: 33% 33% 34%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+    "whatsapp form redes"
+  ;
+}
+.contact {
+  color: #E10814;
+  font-size: 2rem;
+  text-align: center;
+}
+.formulario {
+  margin: 5% 5% 5% 5%;
+  grid-area: form;
+  
+}
+#contacto-form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+label {
+  display: block;
+  margin-bottom: 8px;
+}
+input,
+textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 16px;
+  box-sizing: border-box;
+  border-radius: 20px;
+}
+button {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 19px;
+  cursor: pointer;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+button:hover {
+  background-color: #45a049;
+}
+.whatsapp {
+  width: 100;
+  height: auto;
+  grid-area: whatsapp;
+  background-color: #1b111b;
+}
+.redes {
+  width: 100;
+  height: auto;
+  grid-area: redes;
+  background-color: #1b111b;
+}
+
+/* Meida query */
+
+@media  screen and (max-width: 600px) {
+  body {
+    h1 {
+      font-size: 8rem;
+    }
+    
+   nav {
+      display: none;
+    }
+    .logo-dap {
+      margin-left: 36%;
+      width: 100px;
+      height: 100px;
+      margin-bottom: 15px;
+    }
+    .main-container {
+      background-image: url(../images/Banner_web-01.png);
+      background-size: cover;
+      width: 100%;
+      height: 550px;
+      display: grid;
+      grid-template-columns: 100%;
+      grid-template-rows: 50% 50%; 
+      grid-template-areas:
+        "nombre-artistico"
+        "reproductor"; 
+    }
+    
+
+    .nombre-artistico {
+      grid-area: nombre-artistico ;
+      text-align: center;
+    }
+    .reproductor {
+      grid-area: reproductor;
+    }
+    audio {
+      margin-left: 10%;
+      margin-top: 2%;
+      width: 80%;
+      height: auto;
+    }
+
+   /* carrousel*/
+
+   .carrousel-1 {
+    background-color: #0f0410;
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 50% 50%;
+    grid-template-areas: "tipo-promo "
+                         "label-ep";
+  }
+  
+  .tipo-promo {
+    grid-area: tipo-promo;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .label-ep {
+    grid-area: label-ep;
+    display: flex;
+    justify-content: center; 
+    align-items: center; 
+  }
+  .ep-label {
+    width: 350px;
+    height: 350px;
+  }
+  .promo-tipo {
+    width: 380px;
+    height: 380px;
+  }
+
+  .video-container {
+    width: 100%;
+    height: auto;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
+    grid-template-areas: "vidcontainer1"
+                          "vidcontainer2";
+    overflow: hidden;
+  }
+  
+  .video-1 {
+    grid-area: vidcontainer1;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 0;
+  }
+  .iframe1 {
+    width: 400px;
+    height: 250px;
+  }
+  .iframe2 {
+    width: 400px;
+    height: 250px;
+  }
+  .video-2 {
+    grid-area: vidcontainer2;
+    margin-top: 5%;
+    margin-left: 5%;
+    border: 0;
+  }
+  
+/* BIOGRAFIA*/
+
+.bio-container {
+  background-image: url(../images/Backgroun_biography.png);
+  background-position: right;
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-template-rows: 100%; 
+  grid-template-areas:
+    "texto";
+
+}
+
+.texto {
+  width: 100%;
+  grid-area: texto;
+
+
+}
+.flayers {
+  width: 100%;
+  height: auto;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-template-areas: 
+   " flayer_1 flayer_2"
+   "flayer_3 flayer_4";
+}
+.eventos {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 25px;
+  margin-bottom: 20px;
+
+}
+.flayer1 {
+  grid-area: flayer_1;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+
+}
+.flayer2 {
+  grid-area: flayer_2;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+.flayer3 {
+  grid-area: flayer_3;
+  width: 100%;
+  height: auto;
+  margin-bottom: 5px;
+}
+.flayer4 {
+  grid-area: flayer_4;
+  width: 100%;
+  height: auto;
+  margin-bottom: 2px
+}
+
+
+/* PAGINA PLAY LIST*/
+.playlist-container {
+  width: 100%;
+  height: auto;
+  background-color:#E73E25;
+  display: grid;
+  grid-template-columns: 30% 70%;
+  grid-template-rows: 100%;
+  grid-template-areas: 
+   " disco-1 reproductor";
+
+}
+
+.reproductor-container {
+ 
+  grid-area: reproductor;
+  width: 100%;
+  height: 400px;
+  background-color:#182126;
+}
+
+.disk-left {
+  text-align: center;
+  grid-area: disco-1;
+  width:100%;
+  height: 400px;
+  background-color:#E73E25;
+}
+.disk-right {
+  display: none;
+ 
+}
+
+#disk-izq {
+  width: 100%;
+  height: auto;
+}
+#disk-der {
+  display: none;
+}
+  .contact-form {
+    width: 100%;
+    height: auto;
+    background-color: rgb(98, 6, 126);
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    grid-template-rows: 100%;
+    grid-template-areas: 
+      "whatsapp form redes"
+    ;
+  }
+  .contact {
+    color: #E10814;
+    font-size: 2rem;
+    text-align: center;
+  }
+  .formulario {
+    margin: 5% 5% 5% 5%;
+    grid-area: form;
+    
+  }
+  #contacto-form {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  label {
+    display: block;
+    margin-bottom: 8px;
+  }
+  input,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+    border-radius: 20px;
+  }
+  button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 19px;
+    cursor: pointer;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+  }
+  button:hover {
+    background-color: #45a049;
+  }
+  .whatsapp {
+    width: 100;
+    height: auto;
+    grid-area: whatsapp;
+    background-color: #1b111b;
+  }
+  .redes {
+    width: 100;
+    height: auto;
+    grid-area: redes;
+    background-color: #1b111b;
+  }
+
+
+
+
+  }
+}
